@@ -1,0 +1,99 @@
+:root {
+    --primary: #4f46e5;
+    --background: #f4f6fb;
+    --card: #ffffff;
+    --text: #1f2937;
+    --border: #d1d5db;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0;
+    background-color: var(--background);
+    color: var(--text);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.form-container {
+    background-color: var(--card);
+    width: 100%;
+    max-width: 420px;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.form-container h1 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.form-group {
+    margin-bottom: 1.2rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.4rem;
+    font-weight: bold;
+}
+
+input, select {
+    width: 100%;
+    padding: 0.6rem;
+    border-radius: 6px;
+    border: 1px solid var(--border);
+    font-size: 1rem;
+}
+
+input:focus, select:focus {
+    outline: none;
+    border-color: var(--primary);
+}
+input[type="checkbox"] {
+    width: auto;
+    margin-right: 0.5rem;
+}
+
+.checkbox-group {
+    width: auto;
+    display: flex;
+    align-items: start;
+    gap: 0.1rem;
+}
+
+button {
+    width: 100%;
+    padding: 0.7rem;
+    background-color: var(--primary);
+    border: none;
+    color: white;
+    font-size: 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+button:hover {
+    background-color: #4338ca;
+}
+
+.error {
+    color: #dc2626;
+    font-size: 0.9rem;
+    margin-top: 0.3rem;
+}
+
+.success {
+    text-align: center;
+    color: green;
+    margin-top: 1rem;
+    font-weight: bold;
+}
