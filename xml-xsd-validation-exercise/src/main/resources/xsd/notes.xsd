@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            targetNamespace="http://www.epam.tc.com/note"
+            xmlns:tc="http://www.epam.tc.com/note"
+            elementFormDefault="unqualified">
+
+    <xsd:simpleType name="letterType">
+        <xsd:restriction base="xsd:string">
+            <xsd:pattern value="[A-Za-z]"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:element name="notes">
+        <xsd:complexType>
+            <xsd:sequence minOccurs="1">
+                <xsd:element name="note" maxOccurs="unbounded" minOccurs="1">
+                    <xsd:complexType>
+                        <xsd:sequence>
+                            <xsd:element name="to" type="tc:letterType"/>
+                            <xsd:element name="from" type="xsd:string"/>
+                            <xsd:element name="heading" type="xsd:string"/>
+                            <xsd:element name="body" type="xsd:string"/>
+                        </xsd:sequence>
+                        <xsd:attribute name="id" type="xsd:integer" use="required"/>
+                    </xsd:complexType>
+                </xsd:element>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+</xsd:schema>

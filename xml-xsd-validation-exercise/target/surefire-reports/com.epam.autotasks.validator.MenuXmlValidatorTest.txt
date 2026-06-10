@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: com.epam.autotasks.validator.MenuXmlValidatorTest
+-------------------------------------------------------------------------------
+Tests run: 7, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.207 s <<< FAILURE! - in com.epam.autotasks.validator.MenuXmlValidatorTest
+shouldSuccessfullyValidateXml  Time elapsed: 0.098 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: Unexpected exception thrown: org.xml.sax.SAXParseException: cvc-elt.1.a: Cannot find the declaration of element 'breakfast-menu'.
+Caused by: org.xml.sax.SAXParseException: cvc-elt.1.a: Cannot find the declaration of element 'breakfast-menu'.
+

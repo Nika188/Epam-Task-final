@@ -1,0 +1,3 @@
+com\epam\autotasks\validator\MenuXmlValidatorTest.class
+com\epam\autotasks\validator\NotesXmlValidatorTest.class
+com\epam\autotasks\validator\AbstractXmlValidatorTest.class
